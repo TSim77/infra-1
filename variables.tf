@@ -11,6 +11,13 @@ variable "project_id" {
   description = "Your Project ID"
   type        = string
 }
+variable "env" {
+  description = "Your deployment environment"
+  type        = map(any)
+  default = {
+    "dev" = "dev"
+  }
+}
 variable "region" {
   description = "Your AWS Region"
   type        = string
@@ -32,7 +39,7 @@ variable "codecommit_branch" {
   type        = string
 }
 variable "terraform_ver" {
-    description = "Terraform Version number for passing it to codebuild"
-    default     = "1.2.2"
-    type        = string
+  description = "Terraform Version number for passing it to codebuild"
+  default     = "1.2.2"
+  type        = string
 }
