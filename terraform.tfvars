@@ -1,5 +1,5 @@
-org_name   = "cognizant1"
-team_name  = "revature1"
+org_name   = "cognizant_1"
+team_name  = "tim"
 project_id = "lab_exercise_1"
 region     = "us-east-1"
 env = {
