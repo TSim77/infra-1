@@ -1,9 +1,5 @@
 terraform {
-  #backend "s3" {
-  #  bucket         = "infra-state"
-  #  key            = "infra"
-  # region         = "us-east-1"
-  #}
+
 
   required_version = ">= 0.15"
   required_providers {
