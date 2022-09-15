@@ -2,7 +2,7 @@ locals {
   projects = ["build", "scan", "deploy"]
 }
 resource "aws_s3_bucket" "codepipeline_bucket" {
-  bucket = "${var.s3_bucket_namespace}-tsim-bucket"
+  bucket = "${var.s3_bucket_namespace}-codepipeline-bucket"
 }
 
 resource "aws_s3_bucket_acl" "codepipeline_bucket_acl" {
