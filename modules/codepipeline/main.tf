@@ -132,3 +132,7 @@ resource "aws_codepipeline" "codepipeline" {
     }
   }
 }
+
+data "aws_s3_bucket" "state_bucket" {
+  bucket = "cognizant-2-tim2-lab-exercise-2-dev-codepipeline-bucket"
+}
